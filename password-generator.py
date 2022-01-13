@@ -11,6 +11,8 @@ class Generate:
         self.length = length
 
     def password_generator(self):
+        """ Генерируем рандомные пароли """
+
         chars = '+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
 
         try:
@@ -27,6 +29,7 @@ class Generate:
             return self.password_generator()
 
     def get_data(self):
+        """ Получаем количество и длину паролей """
 
         try:
             count = int(input("Введите кол-во паролей: "))
@@ -41,6 +44,7 @@ class Generate:
 
     @staticmethod
     def save_passwords(data):
+        """ Сохраняем пароли в файл """
 
         with open('passwords.txt', 'a') as file:
             file.write(f"{data}\n")
