@@ -1,5 +1,5 @@
 import random
-import time
+
 
 __author__ = 'SecDet Samurai'
 
